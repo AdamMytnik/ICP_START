@@ -3,7 +3,9 @@
     "ICP_START2_backend": {
       "candid": "src/ICP_START2_backend/ICP_START2_backend.did",
       "package": "ICP_START2_backend",
-      "type": "rust"
+      "type": "custom",
+      "build": "./build.sh ICP_START2_backend",
+      "wasm": "target/wasm32-unknown-unknown/release/ICP_START2_backend.wasm"
     },
     "ICP_START2_frontend": {
       "dependencies": [
