@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "ICP_START2_backend": {
+      "candid": "src/ICP_START2_backend/ICP_START2_backend.did",
+      "package": "ICP_START2_backend",
+      "type": "rust"
+    },
+    "ICP_START2_frontend": {
+      "dependencies": [
+        "ICP_START2_backend"
+      ],
+      "source": [
+        "src/ICP_START2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ICP_START2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
